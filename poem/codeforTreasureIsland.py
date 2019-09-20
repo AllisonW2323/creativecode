@@ -24,7 +24,7 @@ import nltk
 nltk.download('punkt')
 
 
-Bannedword=["chink", "Chink", "Niger", "niger"]   #had to write them so my bot would not
+Bannedword=["chink", "Chink", "Niger", "niger"]   #had to write them so my bot would not, sadly this is an older piece of literature that has obvious bias.
 
 
 
