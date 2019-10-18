@@ -1,6 +1,8 @@
 # Spidermans POV
 
 
+Here is a link to my code on p5js.org: https://editor.p5js.org/AllisonW2323/sketches/oM390zoWa
+
 I created an interesting screen saver by using the code for a torus, on the P5js.org website, and how it moves and then applying that to the "snow" effect so that the "snow" now moves at a very interesting pace and style that I like to think of as Spidermans POV.  I like that when it creates the image on the screen when it is mostly filled (but still filling in as it is continuous) it looks like it is shaded to represent two sides of a building that go down to a narrow street, hence, why I think that Spidermans POV is a good title.  Also, comic books historically have a kind of dot texture that they used to color so I like that this is a nod to that practice by having my dots make up a picture.
 
 I believe that the way I have my code set up it can be easily changed to fit the media wall.  As of now it is set to 400, 400 as our Professor instructed.  
