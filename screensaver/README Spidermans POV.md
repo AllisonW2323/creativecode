@@ -11,5 +11,5 @@ I have just sat and watched this screensaver go for many minutes.  Just like the
 
 The inspiration for my project is both the bubbles and the ribbons screensaver for windows.
 
-I can see someone easily getting some ~enhancments~ an just starring at my screen saver for an hour or two.
+I can see someone easily getting some *enhancments* an just starring at my screen saver for an hour or two.
 P.S. If you look closely you can see a particular shape moving around the screen to create the paths which the colors stay on.
