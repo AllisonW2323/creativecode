@@ -10,7 +10,7 @@ let detailY;
 function setup() {
   createCanvas(1920, 1080, WEBGL); 
   noStroke();
-  background(0, 0, 0); //I got the rotate from the Torus refrence//changed
+  background(0, 0, 0); //I got the rotate from the Torus refrence
 }
 
 function draw() {
