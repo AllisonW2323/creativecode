@@ -11,5 +11,8 @@ I have just sat and watched this screensaver go for many minutes.  Just like the
 
 The inspiration for my project is both the bubbles and the ribbons screensaver for windows.
 
+
+This project has gone through a lot of changes as I found out new methods and crated new ideas for what could be done.  As of now I am sufficently happy with how my project turned out and how it looks.  I am really happy I was able to create my own thing.
+
 I can see someone easily getting some *enhancments* an just starring at my screen saver for an hour or two.
 P.S. If you look closely you can see a particular shape moving around the screen to create the paths which the colors stay on.
