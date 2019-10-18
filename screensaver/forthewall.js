@@ -1,165 +1,85 @@
-let bricks = [];
-let logos = [];
-let umw;
+//I got this helpful code from the torus refrence.
+let count = 0;
+let cycle = 800;
+let lastTarget = 0;
+var x = 0;
+var speed = 0.5;
+//end of torus refrence
 
-function preload(){
- umw = loadImage('umwlogo.png');
-  
-}
+let snowflakes = []; //snowflakes example on this website
+let detailY;
 
+//i got this from the torus refrence
 function setup() {
-  noCursor();
+  createCanvas(400, 400, WEBGL);
   noStroke();
-  createCanvas(1920, 1080);
-  wallMap = [
-    '111111100111111',
-    '111111100111111',
-    '111111000111111',
-    '111110000011111',
-    '111110000001111',
-    '111110000001111',
-    '111110000001111',
-    '111110000001111',
-    '111111000001111',
-    '111111110011111'
-  ];
-  
-
-
-  for (let r = 0; r < 10; r += 1) {
-    for (let c = 0; c < 15; c += 1) {
-      if (wallMap[r][c] == '1') {
-        bricks.push(new Brick(c * 128, r * 108));
-      }
-    }
-  }
-
-  for (let l = 0; l < 1; l += 1) {
-    logos.push(new Logo());
-  }
-
 }
+//end torus
 
 function draw() {
-  colorMode(RGB, 255);
-  background(0, 0, 0, 100);
+  //background(0, 0, 0); //I got the rotate from the Torus refrence
+  //Bianca helped me a bit with color functions so that I could have rainbow colors
+  var Red =random(0, 250)
+  var Green =random(0,250)
+  var Blue =random(0, 250)
+  var Alpha = (255)
+  //end of rainbow colors
   
-  for (let b of bricks) {
-    b.draw();
+noStroke(); 
+  //Here i was helped by the refrence for color, I took out the ellipse's and created dots that swirl around the screen!
+c = color(100); 
+fill(c); 
+  
+  noStroke();
+  rotateX(frameCount * 0.02);  
+  rotateY(frameCount * 2.5);  
+  translate(100, 200)
+  //torus(30, 15);
+  //color functions with help from Bianca
+  fill (Red, Green, Blue, Alpha);  
+  let t = frameCount / 100;
+  
+  //this next section was a big help from the snowflake example, i played around with the numbers until i found what I wanted.
+  for (let i = 0; i < random(8); i++) {   
+    snowflakes.push(new snowflake()); 
   }
-
-  for (let l of logos) {
-    l.draw();
+  for (let flake of snowflakes) {
+    flake.update(t); 
+    flake.display(); 
   }
-}
+  
+  
+  
+  function snowflake() {
+  this.posX = -40;
+  this.posY = random(-60, 2);
+  this.initialangle = random(30, 1 * PI);
+  this.size = random(3, 5);
 
-function Brick(x, y) {
-  this.x = x - 64;
-  this.y = y;
+  this.radius = sqrt(random(pow(width / 2, 2)));
 
-  this.draw = function() {
+  this.update = function(time) {
+    let w = 0.9; 
+    let angle = w * time + this.initialangle;
+    this.posX = width / 2 + this.radius * sin(angle);
 
-    rectMode(CORNER);
-    fill(100, 0, 140,50);
-    rect(this.x, this.y, 128, 108);
+    this.posY += pow(this.size, 0.8);
 
-  }
-}
-
-function Logo() {
-  this.x = width / 2;
-  this.y = height / 2;
-  this.w = 75;
-  this.h = 75;
-  this.speedX = random(-6, 6);
-  this.speedY = random(-6, 6);
-  this.hue = random(20, 90);
-  this.draw = function() {
-
-
-
-    // bounce off the walls
-    if (this.x < this.w / 2 || this.x > width - this.w / 2) {
-      this.speedX = -this.speedX;
-      this.hue = random(20, 90);
+    if (this.posY > height) {
+      let index = snowflakes.indexOf(this);
+      snowflakes.splice(index, 1);
     }
-    if (this.y > height - this.h / 2 || this.y < this.h / 2) {
-      this.speedY = -this.speedY;
-      this.hue = random(20, 90);
-    }
+  };
 
-    for (let b = 0; b < bricks.length; b++) {
-
-      if (
-        this.x + this.speedX > bricks[b].x - this.w / 2 &&
-        this.x + this.speedX < bricks[b].x + 128 + this.w / 2 &&
-        this.y + this.speedY > bricks[b].y - this.h / 2 &&
-        this.y + this.speedY < bricks[b].y + 108 + this.h / 2
-      ) {
-
-        // the next move will be contact, so figure out which
-        // edge it crosses to get there.
-        // the move vector is this.x,this.y -> this.x + this.speedX, this.y + this.speedY
-        if (
-          // top edge first:
-          intersects(this.x, this.y, this.x + this.speedX, this.y + this.speedY,bricks[b].x - this.w / 2 - 5, bricks[b].y - this.h / 2, bricks[b].x + 128 + this.w / 2 + 5, bricks[b].y - this.h / 2)
-        ) {
-          //print("TOP EDGE BREACHED");
-          this.speedY = -this.speedY;
-          this.hue = random(20, 90);
-        } else if (
-          // right edge:
-          intersects(this.x, this.y, this.x + this.speedX, this.y + this.speedY, bricks[b].x + 128 + this.w / 2, bricks[b].y - this.h / 2 - 5, bricks[b].x + 128 + this.w / 2, bricks[b].y + 108 + this.h / 2 + 5)
-        ) {
-
-          this.speedX = -this.speedX;
-          this.hue = random(20, 90);
-        } else if (
-          // bottom edge
-          intersects(this.x, this.y, this.x + this.speedX, this.y + this.speedY,
-            bricks[b].x + 128 + this.w / 2 + 5, bricks[b].y + 108 + this.h / 2, bricks[b].x - this.w / 2 - 5, bricks[b].y + 108 + this.h / 2)
-        ) {
-          this.speedY = -this.speedY;
-          this.hue = random(20, 90);
-        } else if (
-          // left edge 
-          intersects(this.x, this.y, this.x + this.speedX, this.y + this.speedY, bricks[b].x - this.w / 2, bricks[b].y + 108 + 5, bricks[b].x - this.w / 2, bricks[b].y - this.h / 2 - 5)) {
-
-          this.speedX = -this.speedX;
-          this.hue = random(20, 90);
-        }
-
-      }
-    }
-    this.x += this.speedX;
-    this.y += this.speedY;
-    colorMode(HSB, 100);
-    fill(this.hue, 100, 70);
-    rectMode(CENTER);
-    rect(this.x, this.y, this.w, this.h);
-    imageMode(CENTER);
-    image(umw,this.x, this.y, this.w,this.h);
-
+  this.display = function() {
+    ellipse(this.posX, this.posY, this.size);
+  };
+}
+  
   }
+{
+  x =x + speed;
+  //x=x +3;
 }
 
-// Something from Stackoverflow by Dan Fox
-// https://stackoverflow.com/questions/9043805/test-if-two-lines-intersect-javascript-function
-// returns true iff the line from (a,b)->(c,d) intersects with (p,q)->(r,s)
-function intersects(a, b, c, d, p, q, r, s) {
-  var det, gamma, lambda;
-  det = (c - a) * (s - q) - (r - p) * (d - b);
-  if (det === 0) {
-    return false;
-  } else {
-    lambda = ((s - q) * (r - a) + (p - r) * (s - b)) / det;
-    gamma = ((b - d) * (r - a) + (c - a) * (s - b)) / det;
-    return (0 < lambda && lambda < 1) && (0 < gamma && gamma < 1);
-  }
-}
-
-function keyPressed(){
- if (keyCode == '32'){
-   logos.push(new Logo());
- }
-}
+//end snowflake example help
