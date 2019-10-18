@@ -7,12 +7,12 @@ I created an interesting screen saver by using the code for a torus, on the P5js
 
 I believe that the way I have my code set up it can be easily changed to fit the media wall.  As of now it is set to 400, 400 as our Professor instructed.  
 
-I decided to leave the background blank because my inspiration for this was the bubbles screensaver ( https://www.youtube.com/watch?v=Ptp5wjk7sS4that) I always loved when I was younger.  In that screensaver the bubbles just move around your normal desktop or whatever you have pulled up so I decided to do the same where the many dots would slowly cover your entire screen.
+I have always loved painting so the idea that these dots were falling from a paintbrush unto a black canvas was really interesting to me.  I am really happy how it turned out and that the 3-D aspect worked so that I was able to give it depth.
 
 I have just sat and watched this screensaver go for many minutes.  Just like the old timey ribbons screensaver (https://www.youtube.com/watch?v=cElhIDdGz7M) this entrances the viewer and you can easily zone out and just focus on what is happening on the screen as your eyes make up whatever image you want to see.
 
 
-The inspiration for my project is both the bubbles and the ribbons screensaver for windows.
+The inspiration for my project is both the process of painting and the ribbons screensaver for windows.
 
 
 This project has gone through a lot of changes as I found out new methods and crated new ideas for what could be done.  As of now I am sufficiently happy with how my project turned out and how it looks.  I am really happy I was able to create my own thing.
