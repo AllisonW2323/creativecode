@@ -7,7 +7,7 @@ I created an interesting screen saver by using the code for a torus, on the P5js
 
 I believe that the way I have my code set up it can be easily changed to fit the media wall.  As of now it is set to 400, 400 as our Professor instructed.  
 
-I have always loved painting so the idea that these dots were falling from a paintbrush unto a black canvas was really interesting to me.  I am really happy how it turned out and that the 3-D aspect worked so that I was able to give it depth.
+I have always loved painting so the idea that these dots were falling from a paintbrush unto a black canvas was really interesting to me.  I am really happy how it turned out and that the 3-D aspect worked so that I was able to give it depth.  I was able to give it depth by using the torus movement and giving it to the snow effect, the line in the middle was caused by me putting in a particular background so that the rotating object will not touch it.  This line will get smaller but it will never disapear.
 
 I have just sat and watched this screensaver go for many minutes.  Just like the old timey ribbons screensaver (https://www.youtube.com/watch?v=cElhIDdGz7M) this entrances the viewer and you can easily zone out and just focus on what is happening on the screen as your eyes make up whatever image you want to see.
 
