@@ -8,4 +8,4 @@ The bots main purpose is to make fun of Trump because why not?  I feel like that
 
 This bot is still possible of over 200,000 possible combinations.
 
-The bot is hosted at Cheap Bots Done Quick, the code is made with Tracery grammar.
+The bot is hosted at Cheap Bots Done Quick, the code is made with Tracery grammar. here: https://cheapbotsdonequick.com/source/TumpToupeTroubl
