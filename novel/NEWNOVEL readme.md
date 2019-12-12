@@ -11,3 +11,4 @@ I made a new novel called SkyQuest and it is full of lines from both Sky High an
 
 I feel like this version of my novel is far superior, it has paragraphs, spacing, and more to work from than the orgional which just had 1 text.
 
+It also has 10 chapters and chapter headings I called "Commanders Log".
