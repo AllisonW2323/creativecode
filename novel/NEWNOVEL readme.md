@@ -7,3 +7,7 @@ google: https://colab.research.google.com/drive/1STUumG2kEgIxAUbmPNagmL2022HEI4Q
 my website: http://allisonwoods.info/
 
 
+I made a new novel called SkyQuest and it is full of lines from both Sky High and Galaxy Quest.  
+
+I feel like this version of my novel is far superior, it has paragraphs, spacing, and more to work from than the orgional which just had 1 text.
+
