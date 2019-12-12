@@ -2,7 +2,7 @@ New Poem Code!
 
 google: https://colab.research.google.com/drive/10CoiH-orkNsopeJl0EbCDf2WVrImH_Y6
 
-My website: http://allisonwoods.info/
+My website: http://allisonwoods.info/uncategorized/portfolio-for-creative-coding/
 
 
 EX:
