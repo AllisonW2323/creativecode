@@ -4,6 +4,8 @@ I really liked the way that this clock came out and I felt that the best way to 
 
 Here is a link to the P5Js: https://editor.p5js.org/AllisonW2323/sketches/kprYMyq--
 
+my website: http://allisonwoods.info/
+
 Otherwise, what I have said before still stands.  I really liked that this is a more fleshed out version of the old one.
 This is a clock that will only truly resonate with those of us alive right now. Vine was a huge cultural phenomenon for the internet, suddenly people from all over the world could quote it and most people from other countries would be either to either recognize the vine or finish the quote.
 
