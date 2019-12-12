@@ -3,7 +3,7 @@ SkyQuest Novel
 
 google: https://colab.research.google.com/drive/1STUumG2kEgIxAUbmPNagmL2022HEI4Qo
 
-my website: http://allisonwoods.info/
+my website: http://allisonwoods.info/uncategorized/portfolio-for-creative-coding/
 
 I changed the text in question to galaxy quest and Sky High as they both have prominent characters called commander and Gwen. I had originally wanted to fix this by having a bunch of different texts that use the name commander prominently, but I found that using more than two would often cause the resulting PDF to be unreadable. I also formatted this novel so that it has paragraphs now.  It has 10 chapters that I have labeled "Commanders Log".
 
