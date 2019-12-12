@@ -1,5 +1,8 @@
 New Bot Project!
 
+Ex: Oh my, I just saw a Guinea Pig in Finland! I hope it carries me away somewhere safe!
+
+
 This bot, @TumpToupeTroubl, was changed to now show twitter users the inner working of Trump's hair's mind.  In other words, the hair is now alive and has thoughts and is tweeting for us.  
 
 I changed this bot to be more natural sounding and decided that I want it to be his hairs thoughts and not just what happened to his hair.  I feel like this change has made the bot feel and flow a lot better than it did before.  I really like the new direction I have taken this bot.  
