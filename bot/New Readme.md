@@ -1,6 +1,6 @@
 New Bot Project!
 
-my website: http://allisonwoods.info/
+my website: http://allisonwoods.info/uncategorized/portfolio-for-creative-coding/
 
 Ex: Oh my, I just saw a Guinea Pig in Finland! I hope it carries me away somewhere safe!
 
